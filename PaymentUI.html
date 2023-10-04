@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Payment form</title>
+    <style>
+              form{
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+           /* background-image: url(); */
+            margin: 10px 10px;
+            padding: 30px;
+          
+         }
+    .pay{
+        background-color: #71717134;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid #f2f2f200;
+        border-radius: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="date"],
+    select,
+    textarea{
+     width:100%;
+      padding : 6px;
+      border : 1px solid rgba(40, 23, 97, 0);
+    }
+    .payhed{
+        color: rgb(255, 255, 255);
+        background-color: rgb(16, 40, 120);
+        text-align: center;
+        font-family: 'Poppins', sans-serif; ;
+        font-size: 10px;
+        width: 300px;
+        float: right;
+    }
+    input[type="button"]{
+     height: 45px;
+     width: 20%;
+     font-size: 20px;
+     color: rgb(255, 255, 255);
+     background-color: rgb(16,40,120);
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     text-align: center;
+    }
+    footer{
+        color: rgba(36, 34, 0, 0.223);
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="pay">
+            <div class="payhed">
+        <h1>Make A Payment form</Form></h1></div>
+        <h2>Contact information</h2>
+        <p>NAME : <input type="text" name="name" placeholder="Enter the name"></p>
+        <fieldset>
+            <legend>Gender</legend>
+        <p>Male<input type="radio"name="gender">
+            Female<input type="radio"name="gender">
+            Other<input type="radio"name="gender"></p>
+        </fieldset>
+        <p>
+            Address : <textarea name="address" id="address" cols="100" role="5"></textarea>
+        </p>
+        <p>Email : <input type="email" name="email"></p>
+        <p>Pincode : <input type="number" name="pincode" id="pincode"></p>
+        <h2>PAYMENT information</h2>
+        <p>Card type :
+            <select name="card_type" id="card_type">
+                <option>SELECT</option>
+                <option value="rupay">Rupay</option>
+                <option value="visa">VISA</option>
+                <option value="mastercard">MasterCard</option>
+            </select>
+        </p>
+        <p>
+           Card Number : <input type="number" name="cardnumber" id="card_number">
+           Card vailidation : <input type="date" id="exp_date"  name="expdate"  >
+         </p>
+         <p> 
+             CVV  <input type="password" id="cvv" name="cvv" required> 
+         </p>
+         <input type="button" value="Donate Now">
+        </div> </form>
+        <br>
+        <hr>
+    <footer>
+        reserv&#169;Design-by_SaveTheWorld_@Design-shubham2002v
+        </footer>
+</body>
+</html>
